@@ -4,7 +4,10 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.example.guesthouse.auth.infrastructure.Authority;
 import org.example.guesthouse.auth.util.BaseEntity;
+import org.example.guesthouse.house.infrastructure.HouseInfo;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 @Getter
@@ -35,5 +38,9 @@ public class User {
             inverseJoinColumns = {@JoinColumn(name = "authorityName", referencedColumnName = "authorityName")}
     )
     private Set<Authority> authorities;
+
+    @ToString.Exclude
+    @OneToMany(mappedBy = "houseName", fetch = FetchType.LAZY)
+    private List<HouseInfo> house = new ArrayList<>();
 
 }
