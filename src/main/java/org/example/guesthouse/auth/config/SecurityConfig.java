@@ -1,15 +1,12 @@
 package org.example.guesthouse.auth.config;
 
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.example.guesthouse.auth.jwt.JwtAccessDeniedHandler;
 import org.example.guesthouse.auth.jwt.JwtAuthenticationEntryPoint;
 import org.example.guesthouse.auth.jwt.JwtSecurityConfig;
 import org.example.guesthouse.auth.jwt.TokenProvider;
-import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -53,8 +50,8 @@ public class SecurityConfig {
                         .authenticationEntryPoint(jwtAuthenticationEntryPoint)
                 )
                 .authorizeHttpRequests(authorizeHttpRequests -> authorizeHttpRequests
-                        .requestMatchers("/api/login", "/api/authenticate", "/api/signup").permitAll()
-                        .requestMatchers("/", "/**").permitAll()
+//                        .requestMatchers("/api/login","api/user/join", "/api/authenticate", "/api/signup").permitAll()
+                        .requestMatchers("/", "/**", "/api/user/join", "/error").permitAll()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(sessionManagement ->
