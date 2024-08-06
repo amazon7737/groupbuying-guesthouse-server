@@ -21,6 +21,9 @@ public class HouseInfo extends BaseEntity {
     @Column(nullable = false, unique = true)
     private String houseName;
 
+    @Column(nullable = false, unique = true)
+    private String houseDescription;
+
     @Column(nullable = false, unique = false)
     private Long price;
 
