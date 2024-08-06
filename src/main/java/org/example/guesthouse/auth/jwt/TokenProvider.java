@@ -3,6 +3,7 @@ package org.example.guesthouse.auth.jwt;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
@@ -21,6 +22,7 @@ import java.util.Date;
 import java.util.stream.Collectors;
 
 @Component
+@Slf4j
 public class TokenProvider implements InitializingBean {
 
     private final Logger logger = LoggerFactory.getLogger(TokenProvider.class);
@@ -90,5 +92,27 @@ public class TokenProvider implements InitializingBean {
             logger.info("JWT 토큰이 잘못되었습니다.");
         }
         return false;
+    }
+
+    // TOKEN 신원확인
+    private Claims getClaims(String token){
+        log.info("getClaims : {}", token);
+        if(token.isEmpty()){
+            throw new IllegalArgumentException("token이 없습니다.");
+        }
+
+        return Jwts.parser()
+                .setSigningKey(key)
+                .parseClaimsJws(token)
+                .getBody();
+    }
+
+    // 신원 userName만 반환
+    public String getUserFromToken(String token){
+        String username = String.valueOf(getClaims(token).get("sub"));
+
+        log.info("user: {}", String.valueOf(getClaims(token)));
+
+        return username;
     }
 }
