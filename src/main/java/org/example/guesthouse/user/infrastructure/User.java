@@ -5,6 +5,7 @@ import lombok.*;
 import org.example.guesthouse.auth.infrastructure.Authority;
 import org.example.guesthouse.auth.util.BaseEntity;
 import org.example.guesthouse.house.infrastructure.HouseInfo;
+import org.example.guesthouse.user.dto.response.UserInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,11 +22,17 @@ public class User {
     @Column(nullable = false, unique = true)
     private String uuid;
 
-    @Embedded
-    private Password password;
+    @Column(name = "password", nullable = false, unique = false)
+    private String password;
 
     @Column(nullable = false, unique = true)
     private String username;
+
+    @Column(nullable = true, unique = false)
+    private String profileImage;
+
+    @Column(nullable = false)
+    private String nickname;
 
     @Column(nullable = false, unique = false)
     private boolean activated;
@@ -42,5 +49,18 @@ public class User {
     @ToString.Exclude
     @OneToMany(mappedBy = "houseName", fetch = FetchType.LAZY)
     private List<HouseInfo> house = new ArrayList<>();
+
+
+    public static User toEntity(String username , boolean activated, String uuid, String password, String profileImage, String nickname){
+        return User.builder()
+                .username(username)
+                .activated(activated)
+                .password(password)
+                .profileImage(profileImage)
+                .uuid(uuid)
+                .nickname(nickname)
+                .build();
+    }
+
 
 }
