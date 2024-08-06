@@ -4,8 +4,12 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.example.guesthouse.auth.util.BaseEntity;
 import org.example.guesthouse.house.infrastructure.HouseInfo;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -28,6 +32,10 @@ public class Reservation extends BaseEntity {
 
     @Column(nullable = false, unique = false)
     private String startDate;
+
+    @ToString.Exclude
+    @OneToMany(mappedBy = "reservation", fetch = FetchType.LAZY)
+    List<WaitingUser> waitingUsers = new ArrayList<>();
 
 
 }
