@@ -2,6 +2,7 @@ package org.example.guesthouse.house.infrastructure;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.example.guesthouse.auth.util.BaseEntity;
@@ -10,13 +11,14 @@ import org.example.guesthouse.auth.util.BaseEntity;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class HousePosition extends BaseEntity {
 
     @Column(nullable = false, unique = false)
-    private String latitude;
+    private Double latitude;
 
     @Column(nullable = false,unique = false)
-    private String longtitude;
+    private Double longitude;
 
 
     @ManyToOne(fetch = FetchType.LAZY)
