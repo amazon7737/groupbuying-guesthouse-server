@@ -1,7 +1,7 @@
 package org.example.guesthouse.user.dto.response;
 
 import lombok.Builder;
-import org.example.guesthouse.house.dto.request.HouseInfo;
+import org.example.guesthouse.house.dto.response.HouseInfoResponse;
 
 import java.util.List;
 
@@ -10,11 +10,11 @@ public record MyPageInfo (
         String profileImage,
         String username,
 
-        List<HouseInfo> houses
+        List<HouseInfoResponse> houses
 ){
 
 
-    public static MyPageInfo of(String profileImage, String username, List<HouseInfo> houses){
+    public static MyPageInfo of(String profileImage, String username, List<HouseInfoResponse> houses){
 
         return new MyPageInfo(
                 profileImage,
