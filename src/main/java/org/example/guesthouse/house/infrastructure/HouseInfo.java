@@ -21,14 +21,17 @@ public class HouseInfo extends BaseEntity {
     @Column(nullable = false, unique = true)
     private String houseName;
 
-    @Column(nullable = false, unique = true)
+    @Column(columnDefinition = "TEXT")
     private String houseDescription;
 
     @Column(nullable = false, unique = false)
     private Long price;
 
     @Column(nullable = false, unique = false)
-    private String captainImage;
+    private String address;
+
+//    @Column(nullable = false, unique = false)
+//    private String captainImage;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false)
