@@ -51,7 +51,7 @@ public class SecurityConfig {
                 )
                 .authorizeHttpRequests(authorizeHttpRequests -> authorizeHttpRequests
 //                        .requestMatchers("/api/login","api/user/join", "/api/authenticate", "/api/signup").permitAll()
-                        .requestMatchers("/", "/**", "/api/user/join", "/error", "/house").permitAll()
+                        .requestMatchers("/", "/**", "/api/user/join", "/error", "/house", "/house/v2").permitAll()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(sessionManagement ->
