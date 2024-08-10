@@ -24,16 +24,14 @@ public class HouseController {
 
     @GetMapping("/house")
     public ResponseEntity<List<HouseInfoResponse>> findHouseAll(){
-
         List<HouseInfoResponse> list = houseService.findHouseInfoAndImagesAndPositionAll();
-
         return ResponseEntity.status(HttpStatus.OK).body(list);
 
     }
 
     @GetMapping("/house/v2")
-    public ResponseEntity<List<HouseInfoResponse>> findHouseAllWithAsync() throws ExecutionException, InterruptedException {
-        List<HouseInfoResponse> list = houseService.findByHouseInfoV2();
+    public ResponseEntity<HouseInfoResponse[]> findHouseAllWithAsync() throws ExecutionException, InterruptedException {
+        HouseInfoResponse[] list = houseService.findByHouseInfoV2();
         return ResponseEntity.status(HttpStatus.OK).body(list);
     }
 
