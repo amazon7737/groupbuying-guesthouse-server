@@ -10,7 +10,9 @@ import org.example.guesthouse.user.infrastructure.User;
 import java.util.ArrayList;
 import java.util.List;
 
+@Builder
 public record HouseInfoResponse(
+    Long id,
     String houseName,
     Long price,
 
@@ -19,13 +21,26 @@ public record HouseInfoResponse(
 ){
 
 
-    public static HouseInfoResponse of (HouseInfo houseInfo, List<HouseImage> houseImage ){
-            return new HouseInfoResponse(
-                    houseInfo.getHouseName(),
-                    houseInfo.getPrice(),
-                    houseImage.stream().map(HouseImageResponse::from).toList()
-        );
+    public static HouseInfoResponse of (HouseInfoResponse houseInfo, List<HouseImage> houseImages ){
+
+
+            return HouseInfoResponse.builder()
+                    .houseName(houseInfo.houseName)
+                    .price(houseInfo.price)
+                    .houseImages(HouseImageResponse.toList(houseImages))
+                    .build();
+
     }
+
+    public static HouseInfoResponse from(HouseInfo houseInfo){
+        return HouseInfoResponse.builder()
+                .id(houseInfo.getId())
+                .houseName(houseInfo.getHouseName())
+                .price(houseInfo.getPrice())
+                .houseImages(null)
+                .build();
+    }
+
 
 
 }
