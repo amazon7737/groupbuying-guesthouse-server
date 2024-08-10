@@ -12,26 +12,18 @@ import java.util.List;
 
 public record HouseInfoResponse(
     String houseName,
-    String houseDescription,
     Long price,
-    String address,
 
-    UserInfo user,
-    List<HouseImageResponse> houseImages,
+    List<HouseImageResponse> houseImages
 
-    HousePositionResponse position
 ){
 
 
-    public static HouseInfoResponse of (HouseInfo houseInfo, List<HouseImage> houseImage, HousePositionResponse position){
+    public static HouseInfoResponse of (HouseInfo houseInfo, List<HouseImage> houseImage ){
             return new HouseInfoResponse(
                     houseInfo.getHouseName(),
-                    houseInfo.getHouseDescription(),
                     houseInfo.getPrice(),
-                    houseInfo.getAddress(),
-                    UserInfo.of(houseInfo.getUser()),
-                    houseImage.stream().map(HouseImageResponse::from).toList(),
-                    position
+                    houseImage.stream().map(HouseImageResponse::from).toList()
         );
     }
 
