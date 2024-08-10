@@ -1,10 +1,7 @@
 package org.example.guesthouse.house.infrastructure;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import org.example.guesthouse.auth.util.BaseEntity;
 import org.example.guesthouse.user.infrastructure.User;
 
@@ -15,6 +12,7 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class HouseInfo extends BaseEntity {
 
 
