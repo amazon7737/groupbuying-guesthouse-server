@@ -30,10 +30,10 @@ insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictu
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/ff7d8d49-4c8b-493b-a875-e42bb22b2e93.jpg?im_w=720" ,1);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/0aefd982-280f-4201-bb48-e18d7ba1202e.jpg?im_w=1200" ,1);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-50106009/original/18fed6f2-4caa-4370-8066-3407a46cde04.jpeg?im_w=720" ,1);
-insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/25703d99-0753-4492-a3ed-0445ee9c9b1f.jpg?im_w=720" ,1);
-insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/5a3bc4a7-f486-4893-b5b6-62112617037a.jpg?im_w=1200" ,1);
-insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/13e50eb5-65a3-4234-8c97-034837d77680.jpg?im_w=720" ,1);
-insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/31632202-fdee-42fa-bdd2-0d31f2bb0a03.jpg?im_w=720" ,1);
+-- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/25703d99-0753-4492-a3ed-0445ee9c9b1f.jpg?im_w=720" ,1);
+-- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/5a3bc4a7-f486-4893-b5b6-62112617037a.jpg?im_w=1200" ,1);
+-- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/13e50eb5-65a3-4234-8c97-034837d77680.jpg?im_w=720" ,1);
+-- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/31632202-fdee-42fa-bdd2-0d31f2bb0a03.jpg?im_w=720" ,1);
 
 insert into HousePosition (latitude, longitude, houseid_id) values (37.5794834, 126.991175, 1);
 
@@ -48,7 +48,7 @@ insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictu
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE2MjY5NDgzNDYxNTA0ODUyOQ%3D%3D/original/f85eddd0-7710-4f4c-a789-245d727c4353.jpeg?im_w=720" ,2);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE2MjY5NDgzNDYxNTA0ODUyOQ%3D%3D/original/49f5e7de-50e9-44ae-b6eb-49529f3ff8d6.jpeg?im_w=1200" ,2);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE2MjY5NDgzNDYxNTA0ODUyOQ%3D%3D/original/f7513937-6209-4f57-8f88-b2cc64ef7c38.jpeg?im_w=720" ,2);
-insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE2MjY5NDgzNDYxNTA0ODUyOQ%3D%3D/original/4d506167-8868-459a-a667-1e6e60c32c0e.jpeg?im_w=720" ,2);
+-- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE2MjY5NDgzNDYxNTA0ODUyOQ%3D%3D/original/4d506167-8868-459a-a667-1e6e60c32c0e.jpeg?im_w=720" ,2);
 
 insert into HousePosition (latitude, longitude, houseid_id) values (0, 0, 2);
 
@@ -62,7 +62,7 @@ insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictu
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-1036727795063729127/original/3eb54d27-8b97-4d72-9830-b262da08e595.jpeg?im_w=720" ,3);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-1036727795063729127/original/42c7cb48-6e60-45f8-aef5-8299c3df256b.jpeg?im_w=1200" ,3);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-1036727795063729127/original/064ae6a8-ded1-43c1-a285-74de44fc8030.jpeg?im_w=720" ,3);
-insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-1036727795063729127/original/49f0606c-c9b0-4d1a-9a03-f00d7db9a2b9.jpeg?im_w=720" ,3);
+-- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-1036727795063729127/original/49f0606c-c9b0-4d1a-9a03-f00d7db9a2b9.jpeg?im_w=720" ,3);
 
 insert into HousePosition (latitude, longitude, houseid_id) values (0, 0, 3);
 
@@ -76,7 +76,7 @@ insert into HousePosition (latitude, longitude, houseid_id) values (0, 0, 3);
  insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-1212288111249170023/original/1654acd0-47e1-41a2-9ccb-82cc7e441f35.jpeg?im_w=720" ,4);
  insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTIxMjI4ODExMTI0OTE3MDAyMw%3D%3D/original/12f067f3-9c2f-43cb-aca2-b27c41a08325.jpeg?im_w=1200" ,4);
  insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-1212288111249170023/original/2c48de71-75e9-4fe3-9454-0aca14752221.jpeg?im_w=720" ,4);
- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTIxMjI4ODExMTI0OTE3MDAyMw%3D%3D/original/ff43fd27-c360-4a1a-96fa-18a1a17d224a.jpeg?im_w=720" ,4);
+--  insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTIxMjI4ODExMTI0OTE3MDAyMw%3D%3D/original/ff43fd27-c360-4a1a-96fa-18a1a17d224a.jpeg?im_w=720" ,4);
 
  insert into HousePosition (latitude, longitude, houseid_id) values (0, 0, 4);
 
@@ -91,7 +91,8 @@ insert into HousePosition (latitude, longitude, houseid_id) values (0, 0, 3);
  insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-981671230348978184/original/e26b930d-dafa-46c9-b5c8-452058567249.jpeg?im_w=720" ,5);
  insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-981671230348978184/original/09eb4992-ced0-47fd-8618-977fb4281287.jpeg?im_w=1200" ,5);
  insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-981671230348978184/original/9c7c9f14-63a3-4213-b980-15ad54c2e9cf.jpeg?im_w=720" ,5);
- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-981671230348978184/original/1ab1ceb2-43d4-4a46-a54d-a3c800a34ccd.jpeg?im_w=720" ,5);
+--  insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-981671230348978184/original/1ab1ceb2-43d4-4a46-a54d-a3c800a34ccd.jpeg?im_w=720" ,5);
+
  insert into HousePosition (latitude, longitude, houseid_id) values (0, 0, 5);
 
 --
@@ -105,7 +106,8 @@ insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictu
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-990386285068591266/original/8013d3de-844a-40f2-8b2b-97eb5a494638.jpeg?im_w=720" ,6);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-990386285068591266/original/91c4bdf9-8fc0-4b82-925a-8979d0e16db4.jpeg?im_w=1200" ,6);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-990386285068591266/original/e9439495-c7c2-432b-9f3a-42d902b9cbff.jpeg?im_w=720" ,6);
-insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-990386285068591266/original/10c9595b-18f2-43be-965d-f2bd7a31fabf.jpeg?im_w=1200" ,6);
+-- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/hosting/Hosting-990386285068591266/original/10c9595b-18f2-43be-965d-f2bd7a31fabf.jpeg?im_w=1200" ,6);
+
 insert into HousePosition (latitude, longitude, houseid_id) values (0, 0, 6);
 
 -- 일곱번째 집
@@ -122,7 +124,7 @@ insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictu
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/2b83b098-2146-41af-aa59-f96f1920aafc.jpg?im_w=720" ,7);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-951280235060417366/original/373d7c10-e7b2-4679-9f30-858f5d7432a5.jpeg?im_w=720" ,7);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-951280235060417366/original/1d11421d-b77d-4268-9db9-208da0634636.jpeg?im_w=720" ,7);
-insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/2e22612c-4aea-4266-8d56-4a975b3aa38a.jpg?im_w=720" ,7);
+-- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/2e22612c-4aea-4266-8d56-4a975b3aa38a.jpg?im_w=720" ,7);
 
 insert into HousePosition (latitude, longitude, houseid_id) values (0, 0, 7);
 
@@ -137,7 +139,7 @@ insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictu
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-959377017440011061/original/b132f0db-5b0d-49ef-9f4b-96e9cc318c3d.jpeg?im_w=720" ,8);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-959377017440011061/original/2ed1517c-292f-461e-a5cc-82cd1a2d7414.jpeg?im_w=720" ,8);
 insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/3bafd796-1e7a-4ad5-84e6-658b86440a32.jpg?im_w=720" ,8);
-insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-959377017440011061/original/f5538275-f79c-4d7f-bc84-ef246eb00d65.jpeg?im_w=720" ,8);
+-- insert into HouseImage (url, house_id) values ("https://a0.muscache.com/im/pictures/miso/Hosting-959377017440011061/original/f5538275-f79c-4d7f-bc84-ef246eb00d65.jpeg?im_w=720" ,8);
 
 insert into HousePosition (latitude, longitude, houseid_id) values (0, 0, 8);
 
