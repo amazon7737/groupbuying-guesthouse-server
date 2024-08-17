@@ -25,6 +25,7 @@ public record HouseInfoResponse(
 
 
             return HouseInfoResponse.builder()
+                    .id(houseInfo.id)
                     .houseName(houseInfo.houseName)
                     .price(houseInfo.price)
                     .houseImages(HouseImageResponse.toList(houseImages))
