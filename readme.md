@@ -2,7 +2,7 @@
 
 ### Skills
 * Java 17
-* Spring Boot
+* Spring Boot 3.2.5
 * MySql
 
 ### Naming
