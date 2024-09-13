@@ -1,4 +1,4 @@
-## GuestHouse - Server
+## GuestHouse-Server
 
 ### Skills
 * Java 17
