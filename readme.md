@@ -1,4 +1,5 @@
 ## GuestHouse-Server
+> 게스트 하우스 공동 예약 서비스 API 서버
 
 ### Skills
 * Java 17
