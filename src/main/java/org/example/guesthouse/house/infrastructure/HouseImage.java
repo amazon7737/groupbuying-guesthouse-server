@@ -17,7 +17,7 @@ public class HouseImage extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false)
-    private HouseInfo house;
+    private House house;
 
 
 }

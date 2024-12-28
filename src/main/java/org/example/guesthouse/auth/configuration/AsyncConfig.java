@@ -1,4 +1,4 @@
-package org.example.guesthouse.auth.config;
+package org.example.guesthouse.auth.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,9 +14,9 @@ public class AsyncConfig {
     @Bean(name = "threadPoolTaskExecutor")
     public Executor getAsyncExecutor(){
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-        executor.setCorePoolSize(2);
-        executor.setMaxPoolSize(10);
-        executor.setQueueCapacity(500);
+        executor.setCorePoolSize(15);
+        executor.setMaxPoolSize(25);
+        executor.setQueueCapacity(10);
         executor.setThreadNamePrefix("Executor-");
         executor.initialize();
         return executor;

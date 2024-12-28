@@ -3,9 +3,7 @@ package org.example.guesthouse.user.infrastructure;
 import jakarta.persistence.*;
 import lombok.*;
 import org.example.guesthouse.auth.infrastructure.Authority;
-import org.example.guesthouse.auth.util.BaseEntity;
-import org.example.guesthouse.house.infrastructure.HouseInfo;
-import org.example.guesthouse.user.dto.response.UserInfo;
+import org.example.guesthouse.house.infrastructure.House;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +46,7 @@ public class User {
 
     @ToString.Exclude
     @OneToMany(mappedBy = "houseName", fetch = FetchType.LAZY)
-    private List<HouseInfo> house = new ArrayList<>();
+    private List<House> house = new ArrayList<>();
 
 
     public static User toEntity(String username , boolean activated, String uuid, String password, String profileImage, String nickname){

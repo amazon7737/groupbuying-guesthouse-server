@@ -17,12 +17,13 @@ import java.util.UUID;
 @SpringBootTest
 public class UserServiceTest {
 
-    @Autowired
-    UserService userService;
+    @Autowired UserService userService;
+
 
     @Test
     @Transactional
-    void signUpTest(){
+    void signUp(){
+
         // given
         String username = "amazon7737";
         String password = "1234";
@@ -40,7 +41,7 @@ public class UserServiceTest {
 
 
     @Test
-    void loginTest(){
+    void login(){
 
     }
 

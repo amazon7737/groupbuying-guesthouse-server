@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.example.guesthouse.auth.util.BaseEntity;
-import org.example.guesthouse.house.infrastructure.HouseInfo;
+import org.example.guesthouse.house.infrastructure.House;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class Reservation extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false)
-    private HouseInfo house;
+    private House house;
 
     @Column(nullable = false, unique = false)
     private Long price;

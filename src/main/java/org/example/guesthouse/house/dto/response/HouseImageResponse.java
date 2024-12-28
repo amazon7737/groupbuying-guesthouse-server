@@ -2,7 +2,7 @@ package org.example.guesthouse.house.dto.response;
 
 import lombok.Builder;
 import org.example.guesthouse.house.infrastructure.HouseImage;
-import org.example.guesthouse.house.infrastructure.HouseInfo;
+import org.example.guesthouse.house.infrastructure.House;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public record HouseImageResponse(
     String url
 ){
 
-    public static HouseImageResponse of(String url, HouseInfo houseInfo){
+    public static HouseImageResponse of(String url, House house){
         return HouseImageResponse.builder()
                 .url(url)
                 .build();

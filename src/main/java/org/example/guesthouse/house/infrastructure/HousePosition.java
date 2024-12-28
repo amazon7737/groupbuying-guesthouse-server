@@ -23,7 +23,7 @@ public class HousePosition extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false)
-    private HouseInfo houseId;
+    private House houseId;
 
 
 

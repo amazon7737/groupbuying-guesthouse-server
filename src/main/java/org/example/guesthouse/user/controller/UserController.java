@@ -1,5 +1,6 @@
 package org.example.guesthouse.user.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -26,6 +27,7 @@ import java.util.HashMap;
 @RequestMapping("/api/user")
 @RequiredArgsConstructor
 @Slf4j
+@Tag(name = "회원 정보")
 public class UserController {
 
     private final TokenProvider tokenProvider;
