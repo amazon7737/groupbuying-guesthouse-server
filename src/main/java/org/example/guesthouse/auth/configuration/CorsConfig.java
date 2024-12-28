@@ -1,4 +1,4 @@
-package org.example.guesthouse.auth.config;
+package org.example.guesthouse.auth.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
