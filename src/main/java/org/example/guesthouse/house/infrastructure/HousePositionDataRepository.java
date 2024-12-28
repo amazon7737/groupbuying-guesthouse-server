@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface HousePositionDataRepository extends JpaRepository<HousePosition, Long> {
 
-    HousePosition findByHouseId(HouseInfo houseInfo);
+    HousePosition findByHouseId(House house);
 
 }

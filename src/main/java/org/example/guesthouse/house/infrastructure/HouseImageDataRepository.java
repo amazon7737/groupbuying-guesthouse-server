@@ -8,6 +8,8 @@ import java.util.List;
 @Repository
 public interface HouseImageDataRepository extends JpaRepository<HouseImage, Long> {
 
-    List<HouseImage> findAllByHouse(HouseInfo houseInfo);
+    List<HouseImage> findAllByHouse(House house);
+
+    HouseImage findByHouse(House house);
 
 }
