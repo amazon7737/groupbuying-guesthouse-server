@@ -1,22 +1,22 @@
 package org.example.guesthouse.Reservation.dto.response;
 
 import lombok.Builder;
-import org.example.guesthouse.house.infrastructure.HouseInfo;
+import org.example.guesthouse.house.infrastructure.House;
 
 @Builder
 public record ReservationInfo (
 
-    HouseInfo houseInfo,
+    House house,
     Long price,
     Boolean reservated,
     String lastDate,
     String startDate
 ){
 
-    public static ReservationInfo of(HouseInfo houseInfo, Long price, Boolean reservated, String lastDate, String startDate){
+    public static ReservationInfo of(House house, Long price, Boolean reservated, String lastDate, String startDate){
         return ReservationInfo.builder()
                 .reservated(reservated)
-                .houseInfo(houseInfo)
+                .house(house)
                 .lastDate(lastDate)
                 .startDate(startDate)
                 .price(price)
